@@ -29,9 +29,9 @@ const Footer = () => {
           <p className="font-semibold text-gray text-xs sm:m-0 ms-2">
             Copright @ 2024 Apple Inc. All rights reserved.
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex justify-between">
             {footerLinks.map((link, i) => (
-              <p key={link} className="font-semibold text-gray text-xs mx-2 text-nowrap hover:text-white">
+              <p key={link} className="font-semibold text-gray text-xs mx-2 sm:text-nowrap hover:text-white">
                 {link } &nbsp; |
                 
               </p>

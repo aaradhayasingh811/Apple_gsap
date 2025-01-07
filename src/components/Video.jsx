@@ -4,6 +4,7 @@ import frameVideo from "../assets/videos/frame.mp4";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import frame from "../assets/images/frame.png"
 
 const Video = () => {
    const imgRef = useRef(null)
@@ -61,22 +62,26 @@ const Video = () => {
 
       {/* Video Section */}
       <div
-        className="flex flex-col justify-center items-center mx-auto rounded-lg"
-        style={{ width: "65%" }}
+        className="flex flex-col justify-center items-center mx-auto rounded-lg relative"
+        
       >
+        <img src={frame} className="bg-transparent relative w-full z-10" alt=""  />
         <video
-          className="pointer-events-none"
+          className="pointer-events-none absolute w-[95%] h-[90%] sm:rounded-[44px] rounded-[14px] overflow-hidden"
           playsInline
           preload="none"
           muted
           autoPlay
+          loop
+
         >
           <source src={frameVideo} type="video/mp4" />
         </video>
-        <p className="text-gray font-semibold text-center mt-3 text-[#86868b]">
+        
+      </div>
+      <p className="text-gray font-semibold text-center mt-10 text-[#86868b]">
           Honkai: Star Rail
         </p>
-      </div>
 
       {/* Animated Bottom Content */}
       <div className="mb-32 mt-16 flex bottom-content opacity-0 translate-y-20 sm:flex-row flex-col">
