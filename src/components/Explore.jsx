@@ -8,6 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Explore = () => {
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     gsap.to(".word-play", {
       duration: 3,
       y: -50,
