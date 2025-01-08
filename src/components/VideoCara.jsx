@@ -184,7 +184,7 @@ const VideoCara = () => {
 
   return (
     <>
-      <div className="flex items-center h-[40vh] sm:h-[80vh] overflow-hidden w-[100vw]">
+      <div className="flex box items-center h-[40vh] sm:h-[80vh] overflow-hidden w-[100vw]">
         {hightlightsSlides.map((list, i) => (
           <div key={list.id} id="slider" className="sm:ps-20 ps-10">
             <div className="relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh]">

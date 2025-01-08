@@ -32,7 +32,7 @@ const Highlights = () => {
         <div className="">
           <h1 className="textRef sm:text-6xl text-3xl text-[#86868b] opacity-0">Get the highlights.</h1>
         </div>
-        <div className="flex items-end sm:justify-center justify-start sm:my-0 mt-6">
+        <div className="flex items-end sm:justify-center justify-start md:my-0 mt-6">
           <div className="flex items-center w-max me-4 text-xl text-[#2997ff] hover:underline">
             <h1 className="textRef w-max me-2 opacity-0 translate-y-10">Watch the film </h1>
             <img src={watchImg} alt="" className="textRef w-4 h-4 opacity-0 translate-y-10" />
