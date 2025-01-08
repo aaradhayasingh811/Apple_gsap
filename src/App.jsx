@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Video from './components/Video'
 import Explore from './components/Explore'
 import VideoCara from './components/VideoCara'
+import Model from './components/Model'
 function App() {
  
   return (
@@ -16,6 +17,7 @@ function App() {
       <Highlights/>
       {/* <VideoCara/> */}
       <Explore/>
+      <Model/>
       <Video/>
       <Footer/>
     </div>
