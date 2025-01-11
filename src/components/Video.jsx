@@ -24,19 +24,19 @@ const Video = () => {
         scrub:2
       },
     });
-    gsap.from(imgRef.current, {
-        duration: 2,
-        // delay: 1,
-        scale: 2,
-        opacity:0,
-        ease: "power2.inOut",
-        scrollTrigger: {
-          trigger: ".logo",
-          start: "top 70%",
-          end: "bottom 20%",
-        //   scrub: 2,
-        },
-      });
+    // gsap.from(imgRef.current, {
+    //     duration: 2,
+    //     // delay: 1,
+    //     scale: 2,
+    //     opacity:0,
+    //     ease: "power2.inOut",
+    //     scrollTrigger: {
+    //       trigger: ".logo",
+    //       start: "top 70%",
+    //       end: "bottom 20%",
+    //     //   scrub: 2,
+    //     },
+    //   });
       
   }, []);
 
