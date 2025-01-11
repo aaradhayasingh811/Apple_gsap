@@ -5,34 +5,68 @@ import c from "../assets/images/style3.jpg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
 
 export const PhotographicStyle = () => {
+  const myRef = useRef(null);
+
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-    
-    
 
-    gsap.to(".text-style", {
-      stagger: 1,
-      scrollTrigger: {
-        trigger: ".text-style",
-        scrub: 1,
-        start: "top 80%",
-        end: "bottom 20%",
-      },
+    // Animate text-box elements dynamically
+    const textBoxes = gsap.utils.toArray(".text-box");
+    textBoxes.forEach((box) => {
+      gsap.fromTo(
+        box,
+        { y: 50, opacity: 0 },
+        {
+          y: -50,
+          opacity: 1,
+          duration: 3,
+          scrollTrigger: {
+            trigger: box,
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: true,
+          },
+        }
+      );
     });
+
+    const textElement = document.querySelector(".photo-text");
+    const chars = textElement.textContent.split("").map((char) => `<span>${char}</span>`);
+    textElement.innerHTML = chars.join("");
+
+    gsap.fromTo(
+      ".photo-text span",
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger:0.2,
+        scrollTrigger: {
+          trigger: ".box-style",
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub:3
+        },
+      }
+    );
   }, []);
 
   return (
-    <div className="sm:px-44 px-10 sm:my-32 my-20">
+    <div className="sm:px-44 px-10 sm:my-32 my-20 box-style">
       <div className="text-center sm:text-6xl text-4xl mb-20 text-[#94928d]">
         <h1 className="my-3 font-semibold">Choose your</h1>
-        <h1 className="my-3 font-semibold">Photographic Style.</h1>
+        <h1 className="my-3 font-semibold brightness-125 glowing-text photo-text">
+          Photographic Style.
+        </h1>
         <h1 className="my-3 font-semibold">Change it up. Change it back.</h1>
       </div>
-      <div className="flex flex-col sm:gap-y-0 gap-y-10 div-scroll">
+      <div className="flex flex-col sm:gap-y-0 gap-y-10" ref={myRef}>
         <div className="md:h-screen flex md:flex-row flex-col justify-center items-center">
-          <div className="md:px-20 sm:px-10 px-5 flex flex-col items-center justify-center text-style">
+          <div className="md:px-20 sm:px-10 px-5 flex flex-col items-center justify-center text-box opacity-0">
             <h1 className="text-4xl font-semibold mb-8">Lock in your look.</h1>
             <p className="text-lg font-semibold text-[#86868b]">
               We’ve created new styles that let you{" "}
@@ -48,7 +82,7 @@ export const PhotographicStyle = () => {
           </div>
         </div>
         <div className="md:h-screen flex md:flex-row flex-col justify-center items-center">
-          <div className="md:px-20 sm:px-10 px-5 flex flex-col items-center justify-center text-style">
+          <div className="md:px-20 sm:px-10 px-5 flex flex-col items-center justify-center text-box opacity-0">
             <h1 className="text-4xl font-semibold mb-8">
               Align with your aesthetic.
             </h1>
@@ -66,7 +100,7 @@ export const PhotographicStyle = () => {
           </div>
         </div>
         <div className="md:h-screen flex md:flex-row flex-col justify-center items-center">
-          <div className="md:px-20 sm:px-10 px-5 flex flex-col items-center justify-center text-style">
+          <div className="md:px-20 sm:px-10 px-5 flex flex-col items-center justify-center text-box opacity-0">
             <h1 className="text-4xl font-semibold mb-8">
               Make the most of your megapixels.
             </h1>
