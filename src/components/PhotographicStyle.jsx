@@ -43,12 +43,13 @@ export const PhotographicStyle = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1,
-        stagger:0.2,
+        duration: 0.02,
+        stagger:0.02,
         scrollTrigger: {
           trigger: ".box-style",
           start: "top 80%",
           end: "bottom 20%",
+          // markers:true,
           scrub:3
         },
       }
@@ -78,7 +79,7 @@ export const PhotographicStyle = () => {
             </p>
           </div>
           <div className="my-4 sm:mb-0 flex justify-center items-center">
-            <img src={a} alt="Style 1" className="sm:h-screen w-[60%]" />
+            <img src={a} alt="Style 1" className="sm:h-[80vh] sm:w-[20vw] w-[60]" />
           </div>
         </div>
         <div className="md:h-screen flex md:flex-row flex-col justify-center items-center">
@@ -96,7 +97,7 @@ export const PhotographicStyle = () => {
             </p>
           </div>
           <div className="my-4 sm:mb-0 flex justify-center items-center">
-            <img src={b} alt="Style 2" className="sm:h-screen w-[60%]" />
+            <img src={b} alt="Style 2" className="sm:h-[80vh] sm:w-[20vw] w-[60]" />
           </div>
         </div>
         <div className="md:h-screen flex md:flex-row flex-col justify-center items-center">
@@ -116,7 +117,7 @@ export const PhotographicStyle = () => {
             </p>
           </div>
           <div className="my-4 sm:mb-0 flex justify-center items-center">
-            <img src={c} alt="Style 3" className="sm:h-screen w-[60%]" />
+            <img src={c} alt="Style 3" className="sm:h-[80vh] sm:w-[20vw] w-[60]" />
           </div>
         </div>
       </div>
