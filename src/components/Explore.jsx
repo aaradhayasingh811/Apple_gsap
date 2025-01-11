@@ -66,7 +66,7 @@ const Explore = () => {
             <video
               playsInline
               preload="none"
-              className="object-cover object-center  h-[50vh] w-[60vw] "
+              className="object-cover object-center  h-[50vh] sm:w-[60vw] w-[100vw] "
               muted
               autoPlay
               loop
@@ -75,14 +75,14 @@ const Explore = () => {
             </video>
           </div>
           <div className="flex sm:flex-row flex-col justify-center items-center">
-            <div className="h-[50vh] sm:w-[30vw] w-[60vw] overflow-hidden">
+            <div className="h-[50vh] sm:w-[30vw] w-[90vw] overflow-hidden">
               <img
                 src={b}
                 alt=""
                 className="img-exp w-full h-full object-cover object-center scale-150  "
               />
             </div>
-            <div className="h-[50vh] sm:w-[30vw] w-[60vw] overflow-hidden">
+            <div className="h-[50vh] sm:w-[30vw] w-[90vw] overflow-hidden">
               <img
                 src={c}
                 alt=""
