@@ -7,7 +7,11 @@ import Footer from './components/Footer'
 import Video from './components/Video'
 import Explore from './components/Explore'
 import VideoCara from './components/VideoCara'
+import { Hand } from './components/Hand'
+import { Zoom } from './components/Zoom'
+import { PhotographicStyle } from './components/PhotographicStyle'
 import Model from './components/Model'
+import Comaparison from './components/Comaparison'
 function App() {
  
   return (
@@ -19,6 +23,10 @@ function App() {
       <Explore/>
       <Model/>
       <Video/>
+      <Hand/>
+      <Zoom/>
+      <PhotographicStyle/>
+      <Comaparison/>
       <Footer/>
     </div>
   )

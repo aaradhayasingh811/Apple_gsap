@@ -36,7 +36,7 @@ const Model = () => {
   return (
     <div className="bg-[#101010] overflow-x-hidden w-full relative">
       <div className="sm:px-44 px-4 py-5">
-        <h1 className="text-5xl text-[#86868b] py-20 play font-semibold opacity-0 translate-y-15">
+        <h1 className="text-5xl text-[#86868b] sm:py-20 play font-semibold opacity-0 sm:translate-y-15 translate-y-32 ">
           Take a Closer Look.
         </h1>
       </div>
@@ -45,14 +45,14 @@ const Model = () => {
         <img
           src={frame}
           alt="Frame"
-          className="bg-transparent relative sm:h-[40vh] sm:w-[70vw] h-[33vh] w-[72vw] lg:h-[44vh] z-10 rotate-90 lg:w-[37vw] md:h[44vh] md:w[30vw] overflow-hidden"
+          className="bg-transparent relative sm:h-[40vh] sm:w-[70vw] h-[33vh] w-[92vw] lg:h-[44vh] z-10 rotate-90 lg:w-[55vw] md:h[44vh] md:w[30vw] overflow-hidden xl:h-[44vh] xl:w-[40vw]"
         />
         {/* Image inside the frame */}
         <img
           id="mainImage"
           src={a}
           alt="Main"
-          className="absolute sm:h-[40vh] sm:w-[70vw] h-[30vh] w-[70vw] lg:w-[35vw] lg:h-[40vh] object-cover sm:rounded-[30px] rounded-[14px] rotate-90 md:h[44vh] md:w[30vw]"
+          className="absolute sm:h-[39vh] sm:w-[66vw] h-[30vh] w-[90vw] lg:w-[52vw] lg:h-[40vh] object-cover sm:rounded-[30px] rounded-[14px] rotate-90 md:h[44vh] md:w[30vw] xl:h-[42vh] xl:w-[38vw]"
         />
       </div>
 

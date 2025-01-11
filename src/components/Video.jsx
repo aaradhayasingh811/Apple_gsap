@@ -25,9 +25,10 @@ const Video = () => {
       },
     });
     gsap.from(imgRef.current, {
-        duration: 1,
+        duration: 2,
         // delay: 1,
         scale: 2,
+        opacity:0,
         ease: "power2.inOut",
         scrollTrigger: {
           trigger: ".logo",
@@ -44,13 +45,13 @@ const Video = () => {
   return (
     <div className="sm:px-44 px-5">
       {/* Logo Section */}
-      <div className="flex justify-center mt-20 logo" ref={imgRef} >
+      <div className="flex justify-center mt-20 logo opacity-1 overflow-hidden" ref={imgRef} >
         <img src={logo} alt="Chip Logo" className="w-44 h-44" />
       </div>
 
       {/* Header and Description */}
       <div className="flex flex-col items-center">
-        <h2 className="text-center font-semibold text-7xl my-10 text-gray-100 mb-10">
+        <h2 className="text-center font-semibold sm:text-7xl text-5xl  my-10 text-gray-100 mb-10">
           A17 Pro chip.
           <br /> A monster win for gaming.
         </h2>
