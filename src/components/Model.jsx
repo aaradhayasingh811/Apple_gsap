@@ -45,14 +45,14 @@ const Model = () => {
         <img
           src={frame}
           alt="Frame"
-          className="bg-transparent relative sm:h-[40vh] sm:w-[70vw] h-[33vh] w-[92vw] lg:h-[44vh] z-10 rotate-90 lg:w-[55vw] md:h[44vh] md:w[30vw] overflow-hidden xl:h-[44vh] xl:w-[40vw]"
+          className="bg-transparent relative sm:h-[40vh] sm:w-[70vw] h-[30vh] w-[92vw] lg:h-[44vh] z-10 rotate-90 lg:w-[55vw] md:h[44vh] md:w[30vw] overflow-hidden xl:h-[44vh] xl:w-[40vw]"
         />
         {/* Image inside the frame */}
         <img
           id="mainImage"
           src={a}
           alt="Main"
-          className="absolute sm:h-[39vh] sm:w-[66vw] h-[30vh] w-[90vw] lg:w-[52vw] lg:h-[40vh] object-cover sm:rounded-[30px] rounded-[14px] rotate-90 md:h[44vh] md:w[30vw] xl:h-[42vh] xl:w-[38vw]"
+          className="absolute sm:h-[39vh] sm:w-[66vw] h-[28vh] w-[90vw] lg:w-[52vw] lg:h-[40vh] object-cover sm:rounded-[30px] rounded-[14px] rotate-90 md:h[44vh] md:w[30vw] xl:h-[42vh] xl:w-[38vw]"
         />
       </div>
 

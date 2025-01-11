@@ -64,7 +64,7 @@ const Comaparison = () => {
   return (
     <div className="bg-[#101010] min-[817px]:px-44 px-10">
       <div className="flex justify-between sm:flex-row flex-col">
-        <h1 className="sm:text-6xl text-3xl text-[#86868b] font-semibold w-max py-10 comp-text opacity-0 translate-y-16">
+        <h1 className="sm:text-6xl text-3xl text-[#86868b] font-semibold  py-10 comp-text opacity-0 translate-y-16 text-wrap">
           Keep exploring iPhone.
         </h1>
         <a
