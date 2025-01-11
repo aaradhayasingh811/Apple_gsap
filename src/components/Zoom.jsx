@@ -170,16 +170,16 @@ export const Zoom = () => {
                 28mm
               </button>
               <button
-                className={`p-2 rounded-full ${
-                  activeButton === "5x Telephoto"
-                    ? "bg-[#f5f5f7] text-[#333336]"
-                    : ""
-                }`}
-                onClick={(e) => zoomOnClick(e, event)}
-                value="5x Telephoto"
-              >
-                120mm
-              </button>
+              className={`p-2 rounded-full ${
+                activeButton === "5x Telephoto"
+                  ? "bg-[#f5f5f7] text-[#333336]"
+                  : ""
+              }`}
+              onClick={() => zoomOnClick(e,event)}
+              value="5x Telephoto"
+            >
+              120mm
+            </button>
             </div>
           </div>
 
