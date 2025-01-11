@@ -46,14 +46,14 @@ const Model = () => {
         <img
           src={frame}
           alt="Frame"
-          className="bg-transparent relative sm:h-[300px] sm:w-[600px] h-[250px] w-[500px] md:h-[350px] z-10 rotate-90 md:w-[600px]  overflow-hidden "
+          className="bg-transparent relative sm:h-[300px] sm:w-[600px] min-[503px]:h-[250px] min-[503px]:w-[500px] md:h-[350px] z-10 rotate-90 md:w-[600px]  overflow-hidden min-[364px]:h-[200px] min-[364px]:w-[510px]"
         />
         {/* Image inside the frame */}
         <img
           id="mainImage"
           src={a}
           alt="Main"
-          className="absolute sm:h-[280px] sm:w-[590px] h-[230px] w-[470px] md:w-[580px] md:h-[330px] object-cover sm:rounded-[30px] rounded-[14px] rotate-90  "
+          className="absolute sm:h-[280px] sm:w-[590px] min-[503px]:h-[230px] min-[503px]:w-[480px] md:w-[580px] md:h-[330px] object-cover sm:rounded-[30px] rounded-[20px] rotate-90 min-[364px]:h-[180px] min-[364px]:w-[400px] h-[150px]"
         />
       </div>
 
